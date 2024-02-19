@@ -1,4 +1,5 @@
 import { Helmet } from '@modern-js/runtime/head';
+import { Link } from '@modern-js/runtime/router';
 import './index.css';
 
 const Index = () => (
@@ -11,6 +12,7 @@ const Index = () => (
       />
     </Helmet>
     <main>
+      <Link to="/user">user page</Link>
       <div className="title">
         Welcome to
         <img

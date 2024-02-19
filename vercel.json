@@ -2,5 +2,5 @@
   "buildCommand": "modern build",
   "devCommand": "modern dev",
   "outputDirectory": "dist",
-  "rewrites": [{ "source": "/", "destination": "/html/main/index.html" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/html/main/index.html" }]
 }
