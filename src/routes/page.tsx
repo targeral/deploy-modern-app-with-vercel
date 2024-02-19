@@ -1,6 +1,13 @@
 import { Helmet } from '@modern-js/runtime/head';
 import { Link } from '@modern-js/runtime/router';
+import Message from './Message';
 import './index.css';
+
+if (process.env.MODERN_TARGET === 'browser') {
+  document.addEventListener('load', () => {
+    console.log('document load');
+  });
+}
 
 const Index = () => (
   <div className="container-box">
@@ -13,6 +20,7 @@ const Index = () => (
     </Helmet>
     <main>
       <Link to="/user">user page</Link>
+      <Message />
       <div className="title">
         Welcome to
         <img
