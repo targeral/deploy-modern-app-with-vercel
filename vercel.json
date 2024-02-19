@@ -1,4 +1,6 @@
 {
   "buildCommand": "modern build",
-  "outputDirectory": "dist"
+  "devCommand": "modern dev",
+  "outputDirectory": "dist",
+  "rewrites": [{ "source": "/", "destination": "/html/main/index.html" }]
 }
