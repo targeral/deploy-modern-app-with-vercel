@@ -2,5 +2,10 @@
   "buildCommand": "modern build",
   "devCommand": "modern dev",
   "outputDirectory": "dist",
-  "rewrites": [{ "source": "/(.*)", "destination": "/html/main/index.html" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "api/main" }],
+  "functions": {
+    "dist/api/**/*.js": {
+      "maxDuration": 10
+    }
+  }
 }
