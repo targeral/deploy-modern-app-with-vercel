@@ -2,9 +2,9 @@
   "buildCommand": "modern build",
   "devCommand": "modern dev",
   "outputDirectory": "dist",
-  "rewrites": [{ "source": "/(.*)", "destination": "api/main" }],
+  "rewrites": [{ "source": "/(.*)", "destination": "api/test" }],
   "functions": {
-    "dist/api/**/*.js": {
+    "api/**/*.js": {
       "maxDuration": 10
     }
   }
