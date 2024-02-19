@@ -1,0 +1,4 @@
+{
+  "buildCommand": "modern build",
+  "outputDirectory": "dist"
+}
