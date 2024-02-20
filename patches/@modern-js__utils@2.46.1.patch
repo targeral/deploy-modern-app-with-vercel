@@ -1,0 +1,13 @@
+diff --git a/dist/cjs/compiled.js b/dist/cjs/compiled.js
+index cae351ef40bd9ebb304a2f3b7859a3346fe3b83e..6de4564eab012370d2fcea388e23809c6953843c 100644
+--- a/dist/cjs/compiled.js
++++ b/dist/cjs/compiled.js
+@@ -91,7 +91,7 @@ var import_dotenv_expand = __toESM(require("../compiled/dotenv-expand"));
+ var import_browserslist = __toESM(require("../compiled/browserslist"));
+ var import_commander = require("../compiled/commander");
+ var import_signale2 = require("../compiled/signale");
+-const mime = import_import.Import.lazy("../compiled/mime-types", require);
++var mime = require("../compiled/mime-types");
+ const chokidar = import_import.Import.lazy("../compiled/chokidar", require);
+ const inquirer = import_import.Import.lazy("../compiled/inquirer", require);
+ // Annotate the CommonJS export names for ESM import in node:
